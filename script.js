@@ -25,10 +25,14 @@ function addDescription() {
     addedNumbers.sort((a,b) => a - b);
     let sum = addedNumbers.reduce((previous, current) => previous + current, 0);
 
-    description.innerHTML = 
-    `<p>Ao todo, temos ${addedNumbers.length} número(s) adicionados.</p>
-    <p>O maior valor informado foi ${addedNumbers[addedNumbers.length - 1]}.</p>
-    <p>O menor valor informado foi ${addedNumbers[0]}.</p>
-    <p>Somando todos os valores, temos ${sum}.</p>
-    <p>A média dos valores digitados é ${sum / addedNumbers.length}.`
+    if (addedNumbers.length != 0) {
+        description.innerHTML =
+        `<p>Ao todo, temos ${addedNumbers.length} número(s) adicionados.</p>
+        <p>O maior valor informado foi ${addedNumbers[addedNumbers.length - 1]}.</p>
+        <p>O menor valor informado foi ${addedNumbers[0]}.</p>
+        <p>Somando todos os valores, temos ${sum}.</p>
+        <p>A média dos valores digitados é ${sum / addedNumbers.length}.`
+    } else {
+        alert('Valores faltando. Por favor, adicione os números desejados.')
+    }
 }
