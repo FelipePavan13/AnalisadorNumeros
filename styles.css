@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #468eec;
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: 20px auto;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+input#add {
+  display: inline-block;
+}
+
+#addedNum {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+#submit {
+  display: block;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
